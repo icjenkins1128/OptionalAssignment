@@ -113,7 +113,7 @@ public class GraphAdjMatrix implements Graph {
      	for(TempEdges edge: edges){
 
      		//Since the edges are sorts from least to greatest,
-     		//We want to join the two vertices together and add the lowest
+     		//We want to join the two vertices together and add the lowest weight to the MST.
      		if( dS.find(edge.getV1()) != dS.find(edge.getV2()) ) {
 			
      			dS.union(edge.getV1(), edge.getV2());
